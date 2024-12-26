@@ -32,7 +32,7 @@ actor {
       MessageHistory.put(senderPhone, message);
     };
 
-    public query func sentMessages(senderPhone: Phone): async ?Message {
+    public query func getMessages(senderPhone: Phone): async ?Message {
       MessageHistory.get(senderPhone)
     };
 
